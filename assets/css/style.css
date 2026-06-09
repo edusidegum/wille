@@ -384,32 +384,76 @@ body {
 }
 
 /* ─────────────────────────────────────
-   MENU HORIZONTAL
+   MENU DROPDOWN
    ───────────────────────────────────── */
-.menu-horizontal {
-    display: flex;
-    gap: 14px;
-    flex: 1;
-    justify-content: center;
+.menu-dropdown {
+    position: relative;
 }
 
-.menu-horizontal a {
-    color: #b87333;
-    text-decoration: none;
-    font-size: 0.78rem;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 4px;
-    white-space: nowrap;
+.menu-toggle {
+    background: #b87333;
+    color: #fff;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
     letter-spacing: 0.5px;
-    transition: color 0.2s, background 0.2s;
+    transition: background 0.2s;
 }
 
-.menu-horizontal a:hover {
+.menu-toggle:hover {
+    background: #9c5e2a;
+}
+
+.menu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 6px;
+    background: #1a1a1a;
+    border: 1px solid rgba(201, 160, 80, 0.3);
+    border-radius: 8px;
+    list-style: none;
+    min-width: 170px;
+    z-index: 1001;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.menu-lista li {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.menu-lista li:last-child {
+    border-bottom: none;
+}
+
+.menu-lista a {
+    display: block;
+    padding: 11px 16px;
+    color: #d6d6d6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-align: center;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.menu-lista a:hover {
+    background: rgba(184, 115, 51, 0.15);
     color: #d4944a;
-    background: rgba(184, 115, 51, 0.08);
 }
 
+/* Abrir menu ao tocar (mobile) ou hover (desktop) */
+.menu-dropdown:focus-within .menu-lista,
+.menu-dropdown:hover .menu-lista {
+    display: block;
+}
 
 /* ─────────────────────────────────────
    IMAGEM DO CATÁLOGO NO RODAPÉ
