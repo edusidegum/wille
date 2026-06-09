@@ -382,3 +382,89 @@ body {
     .produtos-premiados { flex-direction: row; }
     .produto-card { flex: 1; }
 }
+
+/* ─────────────────────────────────────
+   MENU DROPDOWN
+   ───────────────────────────────────── */
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-toggle {
+    background: transparent;
+    color: var(--dourado);
+    border: 1px solid rgba(201, 160, 80, 0.4);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.menu-toggle:hover {
+    background: rgba(201, 160, 80, 0.1);
+}
+
+.menu-lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background: #1a1a1a;
+    border: 1px solid rgba(201, 160, 80, 0.3);
+    border-radius: 8px;
+    list-style: none;
+    min-width: 180px;
+    z-index: 1001;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.menu-lista li {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.menu-lista li:last-child {
+    border-bottom: none;
+}
+
+.menu-lista a {
+    display: block;
+    padding: 12px 16px;
+    color: #d6d6d6;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.menu-lista a:hover {
+    background: rgba(201, 160, 80, 0.1);
+    color: var(--dourado-claro);
+}
+
+/* Mostrar menu no hover (desktop) e no focus (mobile) */
+.menu-dropdown:hover .menu-lista,
+.menu-dropdown:focus-within .menu-lista {
+    display: block;
+}
+
+/* ─────────────────────────────────────
+   IMAGEM DO CATÁLOGO NO RODAPÉ
+   ───────────────────────────────────── */
+.img-catalogo {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.link-catalogo-img:hover .img-catalogo {
+    transform: scale(1.03);
+}
+
