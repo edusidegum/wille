@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://edusidegum.github.io/wille/sitemap.xml
