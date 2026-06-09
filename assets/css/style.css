@@ -72,6 +72,7 @@ body {
     text-align: center;
     padding: 50px 16px;
     background: url('../img/Wille_Deposito.png') center/cover no-repeat;
+    background-color: #1a1a1a; /* fallback se a imagem não carregar */
 }
 .hero-overlay {
     position: absolute;
