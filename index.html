@@ -19,7 +19,94 @@
     <meta property="og:image" content="https://edusidegum.github.io/wille/img/Wille_capa.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-</head>
+</head> 
+
+
+  <!-- ═══════════ PROTEÇÃO CONTRA CÓPIA ═══════════ -->
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #0a0a0a;
+            color: #d6d6d6;
+            font-family: 'Segoe UI', 'Open Sans', sans-serif;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #78BE20;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .page-description {
+            text-align: center;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            max-width: 1100px;
+            margin: 0 auto;
+            border: 1px solid rgba(120, 190, 32, 0.2);
+            border-radius: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+        thead { background: #1a1a1a; }
+        th {
+            padding: 14px 16px;
+            text-align: left;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #78BE20;
+            border-bottom: 2px solid rgba(120, 190, 32, 0.3);
+        }
+        td {
+            padding: 13px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+        }
+        tbody tr { transition: background 0.2s; }
+        tbody tr:hover { background: rgba(120, 190, 32, 0.05); }
+        tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.015); }
+        tbody tr:nth-child(even):hover { background: rgba(120, 190, 32, 0.06); }
+
+        a { color: #78BE20; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; color: #8ae029; }
+
+        .tag-status {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+        .tag-on { background: rgba(120, 190, 32, 0.2); color: #78BE20; }
+        .tag-off { background: rgba(255, 70, 70, 0.2); color: #ff6b6b; }
+        .tag-checking { background: rgba(255, 193, 7, 0.2); color: #ffc107; }
+
+        .info {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.7rem;
+            color: #555;
+        }
+        .loading-row td {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+    </style>    
 <body>
 
     <!-- ═══════════ TOPBAR FIXA ═══════════ -->
