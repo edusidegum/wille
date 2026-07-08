@@ -1,3 +1,20 @@
+# Robots.txt — Cachaçaria Wille
 User-agent: *
 Allow: /
+Disallow: /wille/doc/
+Disallow: /wille/data/
+Disallow: /wille/scripts/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /wille/doc/
+Disallow: /wille/data/
+Disallow: /wille/scripts/
+
+User-agent: bingbot
+Allow: /
+Disallow: /wille/doc/
+Disallow: /wille/data/
+Disallow: /wille/scripts/
+
 Sitemap: https://edusidegum.github.io/wille/sitemap.xml
